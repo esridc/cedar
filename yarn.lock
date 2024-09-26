@@ -37,13 +37,9 @@
   version "3.21.2"
   resolved "https://registry.yarnpkg.com/@types/amcharts/-/amcharts-3.21.2.tgz#028f9ce27f0df403c0f8e7187a609bf97cb98a1e"
 
-"@types/estree@0.0.39":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
-
 "@types/events@*":
   version "1.2.0"
-  resolved "http://registry.npmjs.org/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
+  resolved "https://registry.npmjs.org/@types/events/-/events-1.2.0.tgz#81a6731ce4df43619e5c8c945383b3e62a89ea86"
 
 "@types/fs-extra@^5.0.3":
   version "5.0.4"
@@ -1865,6 +1861,10 @@ fsevents@^1.2.2, fsevents@^1.2.3:
     nan "^2.9.2"
     node-pre-gyp "^0.10.0"
 
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
+
 fstream-ignore@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/fstream-ignore/-/fstream-ignore-1.0.5.tgz#9c31dae34767018fe1d249b24dada67d092da105"
@@ -2226,7 +2226,7 @@ http-signature@~1.2.0:
 
 humanize-url@^1.0.0:
   version "1.0.1"
-  resolved "http://registry.npmjs.org/humanize-url/-/humanize-url-1.0.1.tgz#f4ab99e0d288174ca4e1e50407c55fbae464efff"
+  resolved "https://registry.npmjs.org/humanize-url/-/humanize-url-1.0.1.tgz#f4ab99e0d288174ca4e1e50407c55fbae464efff"
   dependencies:
     normalize-url "^1.0.0"
     strip-url-auth "^1.0.0"
@@ -4365,12 +4365,11 @@ rollup-watch@^4.3.1:
     require-relative "0.8.7"
     rollup-pluginutils "^2.0.1"
 
-rollup@^0.64.1:
-  version "0.64.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.64.1.tgz#9188ee368e5fcd43ffbc00ec414e72eeb5de87ba"
-  dependencies:
-    "@types/estree" "0.0.39"
-    "@types/node" "*"
+rollup@^2.79.2:
+  version "2.79.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.79.2.tgz#f150e4a5db4b121a21a747d762f701e5e9f49090"
+  optionalDependencies:
+    fsevents "~2.3.2"
 
 rsvp@^3.3.3:
   version "3.6.2"
